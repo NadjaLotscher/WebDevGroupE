@@ -1,3 +1,222 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,400i,700|Roboto+Slab:700');
-@import url('https://fonts.googleapis.com/css2?family=Mulish:200,400,wght@1,1000&display=swap');
-@import url('https://picsum.photos/200/300');
+/* @import url('https://picsum.photos/200/300'); */
+
+/* remove unused weight from the font import */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap");
+
+/* --------------GENERAL LAYOUT-------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* So padding doesn't affect the width */
+}
+
+body {
+  font-family: "Open Sans", sans-serif, Arial, "Helvetica Neue", Helvetica;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: 20242b;
+  font-family: "Montserrat", sans-serif, Georgia, Times, "Times New Roman";
+}
+
+/* --------------NAVIGATION BAR-------------- */
+
+header {
+  background-color: #ffffff;
+  color: #3b3b3b;
+  padding: 0;
+  text-align: left;
+}
+
+nav {
+  display: flex;
+  align-items: center; /* Aligns flex items vertically in the center */
+  height: 40px;
+  padding: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Make the ul a flex container */
+  align-items: center; /* Vertically centers the flex items (the li's) */
+  width: 100%; /* Ensures the ul spans the full width of the nav */
+  height: 100%;
+  justify-content: flex-start; /* Aligns items to the left */
+}
+
+nav ul li {
+  text-decoration: none;
+  height: 100%;
+  color: #1b1b1b; /* normal text color */
+}
+
+nav .hamburger {
+  display: flex; /* If it contains an image or similar */
+  align-items: center; /* Align the contents of the hamburger icon vertically */
+  justify-content: center; /* Align the contents of the hamburger icon horizontally */
+}
+
+.hamburger img {
+  height: 22px;
+  width: 22px;
+  margin: 6px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #1b1b1b;
+  height: 100%;
+  padding: 0 20px; /* Makes it easier to click on the links */
+  /* Vertical centering */
+  display: flex; /* If it contains an image or similar */
+  align-items: center; /* Align the contents vertically */
+  justify-content: center; /* Align the contents horizontally */
+}
+
+/* Hover state for nav links */
+nav ul li a:hover {
+  background-color: #e0e0e0; /* Slightly different background color for hover */
+  color: #333; /* Optionally change the text color on hover */
+}
+/* Active state for nav links */
+nav ul li.active a {
+  background-color: #3b4251; /* More distinct background color for active state */
+  color: #e0e0e0; /* Text color for active state */
+}
+
+/* -----------------HEADER----------------- */
+
+header h1 {
+  /* Background image */
+  height: 170px;
+  background-image: url("../images/HeaderBackground.jpeg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: 0;
+  width: 100%;
+  padding: 40px;
+  text-align: bottom;
+  /* Vertical centering */
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  /* Glowing effect */
+  color: #f1f1f1;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.5), 0 0 40px #ffffff,
+    0 0 50px #ffffff, 0 0 70px #ffffff, 0 0 110px #ffffff;
+}
+
+header ul {
+  background-color: #bdbdbd;
+}
+
+/* --------------CONTENT AREA-------------- */
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article h2 {
+  padding-top: 40px;
+}
+
+#timestamp {
+  font-style: italic;
+  color: #818181;
+  font-size: 0.8em;
+  text-align: right;
+}
+
+article p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+section#articles {
+  margin: 20px 0;
+  flex: 1 0 75%; /* <aside> snapping to the side */
+}
+
+article {
+  background-color: #ffffff;
+  padding: 0 20px 20px 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* -----------------SIDEBAR----------------- */
+
+aside {
+  background-color: #ffffff;
+  height: 400px;
+  padding: 30px 10px 10px 10px;
+  flex: 1 0 25%; /* <aside> snapping to the side */
+}
+
+aside div {
+  background-color: #ffffff;
+  height: 250px;
+  padding: 0;
+  margin-bottom: 20px;
+  box-shadow: 0 0 15px #747474; /* shadow effect */
+  border-radius: 15px; /* round edges */
+}
+
+aside h3 {
+  background-color: #3b4251;
+  width: 100%;
+  padding: 10px;
+  color: #edf1ff;
+  /* round edges */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+aside ul {
+  height: 250px;
+  list-style-type: none;
+}
+
+aside ul li {
+  display: block;
+}
+
+aside p {
+  background-color: #ffffff;
+  padding: 10px 10px 0 10px;
+  margin: 0;
+}
+
+/* -----------------FOOTER----------------- */
+footer {
+  background-color: #bdbdbd;
+  color: #fff;
+  display: flex;
+  align-items: center; /* Align children to the center */
+  justify-content: space-between; /* Space out footer children */
+  padding: 10px;
+  position: relative; /* Keeps footer in flow, lets children absolutely position themselves relative to it */
+  width: 100%;
+}
+
+#logo {
+  height: 27.4px; /* Keep your fixed height */
+  width: 100px; /* Keep your fixed width */
+  margin-left: auto; /* Pushes the logo to the far right */
+  align-self: flex-end; /* Aligns the logo to the bottom */
+}
+
