@@ -4,40 +4,26 @@
   xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
 >
   <head>
-    <title>64-31 - Project - Description</title>
+    <title>Apex Drifters - Description</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../ressources/css/style.css" />
-    
-
-    <!--[if gte mso 9
-      ]><xml>
-        <mso:CustomDocumentProperties>
-          <mso:xd_Signature msdt:dt="string"></mso:xd_Signature>
-          <mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor
-            msdt:dt="string"
-            >Rey
-            Rapha�l</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor
-          >
-          <mso:Order msdt:dt="string">4203700.00000000</mso:Order>
-          <mso:xd_ProgID msdt:dt="string"></mso:xd_ProgID>
-          <mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
-          <mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author
-            msdt:dt="string"
-            >Rey
-            Rapha�l</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author
-          >
-          <mso:ComplianceAssetId msdt:dt="string"></mso:ComplianceAssetId>
-          <mso:TemplateUrl msdt:dt="string"></mso:TemplateUrl>
-          <mso:ContentTypeId msdt:dt="string"
-            >0x0101007BAE827F9E369F47BA44DF5D5B04C2CA</mso:ContentTypeId
-          >
-          <mso:TriggerFlowInfo msdt:dt="string"></mso:TriggerFlowInfo>
-          <mso:_SourceUrl msdt:dt="string"></mso:_SourceUrl>
-          <mso:_SharedFileIndex msdt:dt="string"></mso:_SharedFileIndex>
-        </mso:CustomDocumentProperties> </xml
-    ><![endif]-->
   </head>
+
+  <!-- Hamburger menu (toggle menu in mobile view) -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const hamburger = document.querySelector(".hamburger");
+      const navItems = document.querySelectorAll("nav ul li:not(.hamburger)");
+
+      hamburger.addEventListener("click", function () {
+        // Use forEach to apply the 'visible' class to each nav item
+        navItems.forEach((item) => {
+          item.classList.toggle("visible");
+        });
+      });
+    });
+  </script>
 
   <body>
     <header>
@@ -72,51 +58,64 @@
       <section id="articles">
         <article>
           <header>
-            <h2>Apex Drifters: Our Project Game Description</h2>
-            <p id="timestamp">By Nadja Lötscher, 04/05/2024 at 09:00</p>
+            <h2>Apex Drifters: Project Game Description</h2>
+            <p id="timestamp">By Nadja Lötscher 11/04/2023</p>
           </header>
           <p>
-            Welcome to <strong>Apex Drifters</strong>, a thrilling race against time 
-            and obstacles, developed by the innovative minds at HES-SO VS. In this 
-            engaging web-based game, players navigate a sleek car down an endless road, 
-            dodging obstacles and collecting fuel to keep the journey alive. 
+            Welcome to <strong>Apex Drifters</strong>, a thrilling race against
+            time and obstacles, developed by innovative minds at HES-SO VS.
+            In this engaging web-based game, players navigate a sleek car down
+            an endless road, dodging obstacles and collecting fuel to keep the
+            journey alive.
           </p>
           <p>
-            Our game introduces a unique twist to the classic racing genre - an 
-            ever-depleting fuel gauge that demands strategic maneuvering and quick 
-            reflexes to ensure the car doesn't run out of gas. With every obstacle hit, 
-            the stakes get higher as precious fuel is lost. Can you keep the tank full 
-            and the wheels turning?
+            This game introduces a unique twist to the classic racing genre - an
+            ever-depleting fuel gauge that demands strategic maneuvering and
+            quick reflexes to ensure the car doesn't run out of gas. With every
+            obstacle hit, the stakes get higher as precious fuel is lost. Can
+            you keep the tank full and the wheels turning?
           </p>
           <p>
-            Developed using the latest in HTML, CSS, and JavaScript technologies, 
-            <strong>Apex Drifters</strong> is a testament to the power of web development 
-            in creating immersive gaming experiences. Dive into the driver's seat and 
-            test your skills on this unpredictable road.
+            The source code of the application is available on the
+            <a href="https://github.com/">GitHub of the project</a>. Join us in
+            our development journey and let's push the boundaries of web gaming
+            together.
+
+            game mechanics:
+            - add different kind of cars/vehicles with different stats
+            - add coins to unlock new vehicles and/or power-ups (power-ups can only be used for one race)
+            - drag and drop -> add power-ups to your vehicle in the home page
+            - during the game, power-ups can be activated by pushing a button, so you can buy a few power-ups and use them when you need them and also possibly stack them (every power-up is activated by a different button)
+            - power ups: shields, speed boost, invincible for 5 seconds, emergency fuel
+
           </p>
-          <p>
-            The source code of the application is available on the 
-            <a href="https://github.com/">GitHub of the project</a>. Join us in our 
-            development journey and let's push the boundaries of web gaming together.
-          </p>
-      </article>
+        </article>
       </section>
       <aside>
         <div>
           <h3>Datasheet</h3>
           <ul>
             <li>
-              <p><strong>Nadja Lötscher:</strong> Web Developer in Training</p>
+              <p><strong>Nadja Lötscher:</strong> Junior Web Developer</p>
             </li>
             <li>
-              <p><strong>Adrien Alber:</strong> Web Developer in Training</p>
+              <p><strong>Adrien Alber:</strong> Junior Web Developer</p>
             </li>
           </ul>
         </div>
-      </aside>    
+      </aside>
       <!-- Here is the starting point for the page content -->
     </main>
     <footer>
+      <p class="copyright">
+        &copy; 2024 Nadja Lötscher. All rights reserved.
+      </p>
+      <section id="impressum">
+        <h3>Impressum</h3>
+        <p>Nadja Lötscher</p>
+        <p>HES-SO, Rue de la Plaine 2, 3960 Sierre</p>
+        <p>Email: nadja.lotscher@hes-so.ch</p>
+      </section>
       <img id="logo" src="../ressources/images/logo.png" />
     </footer>
   </body>

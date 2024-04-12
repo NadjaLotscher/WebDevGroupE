@@ -4,40 +4,26 @@
   xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
 >
   <head>
-    <title>64-31 - Project - Logbook</title>
+    <title>Apex Drifters - Logbook</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../ressources/css/style.css" />
-    
-
-    <!--[if gte mso 9
-      ]><xml>
-        <mso:CustomDocumentProperties>
-          <mso:xd_Signature msdt:dt="string"></mso:xd_Signature>
-          <mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor
-            msdt:dt="string"
-            >Rey
-            Rapha�l</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor
-          >
-          <mso:Order msdt:dt="string">4203400.00000000</mso:Order>
-          <mso:xd_ProgID msdt:dt="string"></mso:xd_ProgID>
-          <mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
-          <mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author
-            msdt:dt="string"
-            >Rey
-            Rapha�l</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author
-          >
-          <mso:ComplianceAssetId msdt:dt="string"></mso:ComplianceAssetId>
-          <mso:TemplateUrl msdt:dt="string"></mso:TemplateUrl>
-          <mso:ContentTypeId msdt:dt="string"
-            >0x0101007BAE827F9E369F47BA44DF5D5B04C2CA</mso:ContentTypeId
-          >
-          <mso:TriggerFlowInfo msdt:dt="string"></mso:TriggerFlowInfo>
-          <mso:_SourceUrl msdt:dt="string"></mso:_SourceUrl>
-          <mso:_SharedFileIndex msdt:dt="string"></mso:_SharedFileIndex>
-        </mso:CustomDocumentProperties> </xml
-    ><![endif]-->
   </head>
+
+  <!-- Hamburger menu (toggle menu in mobile view) -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const hamburger = document.querySelector(".hamburger");
+      const navItems = document.querySelectorAll("nav ul li:not(.hamburger)");
+
+      hamburger.addEventListener("click", function () {
+        // Toggle the 'visible' class for all navigation items except the hamburger icon
+        navItems.forEach((item) => {
+          item.classList.toggle("visible");
+        });
+      });
+    });
+  </script>
 
   <body>
     <header>
@@ -72,33 +58,134 @@
       <section id="articles">
         <article>
           <header>
-            <h2>Logbook of your project</h2>
-            <p id="timestamp">By Nadja Lötscher, 04/05/2024 at 09:00</p>
+            <h2>Project Logbook</h2>
+            <p id="timestamp">By Nadja Lötscher 11/04/2023</p>
           </header>
-          <p>
-            Lorem ipsum dolor sit amet...
-            <a href="http://www.hevs.ch/">http://www.hevs.ch/</a>, Ut non eros
-            scelerisque, varius diam a, pulvinar arcu. Phasellus fermentum non
-            arcu ornare ornare. Sed libero mi, rutrum et felis commodo, molestie
-            tempor leo. Duis sit amet erat ut elit faucibus tincidunt sit amet
-            non leo. Quisque dapibus ultricies cursus.
-          </p>
-          <p>
-            Aenean elit nisi, maximus sit amet vulputate non, molestie non odio.
-            Quisque in dolor vel libero
-            <strong>lobortis commodo</strong> ultricies sed nisl. Orci varius
-            natoque penatibus et magnis dis parturient montes, nascetur
-            ridiculus mus. Ut pretium ipsum in ipsum venenatis, id elementum
-            quam ultrices. Nam nec enim sagittis, ultrices massa eu, fermentum
-            sem.
-          </p>
-          <p>
-            <strong>Nam sed justo tortor:</strong>Aliquam eros ex, porttitor vel
-            aliquam in, imperdiet id felis. Aliquam sed est quis nibh vestibulum
-            porta. Nam ipsum quam, dapibus quis felis quis, pharetra auctor
-            sapien
-          </p>
-        </article>
+
+          <article class="log-entry">
+            <header>
+              <h3>Project Kick-off and Game Concept Definition</h3>
+              <p class="log-date">Entry by Adrien & Nadja, Date: 08/03/2024</p>
+            </header>
+            <p>
+              We conducted the initial project kick-off, where both of us decided on creating a game. The initial game logic and 
+              concept were discussed and defined.
+            </p>
+            <p class="hours-worked">
+              Total Hours: 0.5
+            </p>
+          </article>
+          
+          <article class="log-entry">
+            <header>
+              <h3>Game Logic Revision and New Concept Decision</h3>
+              <p class="log-date">Entry by Adrien & Nadja, Date: 14/03/2024</p>
+            </header>
+            <p>
+              Decided to pivot our game concept to an endless runner style, specifically a top-to-bottom racing game. Agreed on the 
+              essential mechanics and racing theme.
+            </p>
+            <p class="hours-worked">
+              Total Hours: 0.25
+            </p>
+          </article>
+          
+          <article class="log-entry">
+            <header>
+              <h3>Styling the Page and CSS Challenges</h3>
+              <p class="log-date">Entry by Nadja, Date: 23/03/2024</p>
+            </header>
+            <p>
+              Dedicated the day to work on the CSS for the page styling. Faced and resolved issues with linking the CSS file to the 
+              HTML and understanding the intricacies of box shadows.
+            </p>
+            <p class="hours-worked">
+              Total Hours: 10
+            </p>
+          </article>
+
+          <article class="log-entry">
+            <header>
+              <h3>Continued CSS Development</h3>
+              <p class="log-date">Entry by Nadja, Date: 24/03/2024</p>
+            </header>
+            <p>
+              Worked on refining the CSS for the game's interface. Progressed in the general understanding and application of styles 
+              without major issues.
+            </p>
+            <p class="hours-worked">
+              Total Hours: 5
+            </p>
+          </article>
+          
+          <article class="log-entry">
+            <header>
+              <h3>Finalization of Project Document & added Responsivness</h3>
+              <p class="log-date">Entry by Nadja, Date: 05/04/2024</p>
+            </header>
+            <p>
+              Completed the document for the project, including game description and other content, and updated the description page 
+              on our website accordingly. I also implemented responsive design adjustments to the side information panel to ensure usability across various device sizes.
+            </p>
+            <p class="hours-worked">
+              Total Hours: 3
+            </p>
+          </article>
+          
+          <article class="log-entry">
+            <header>
+              <h3>Creation of Flow Diagram</h3>
+              <p class="log-date">Entry by Nadja, Date: 09/04/2024</p>
+            </header>
+            <p>
+              Developed the flow diagram for the game, outlining the user journey and game mechanics without any significant issues.
+            </p>
+            <p class="hours-worked">
+              Total Hours: 1
+            </p>
+          </article>
+          
+          <article class="log-entry">
+            <header>
+              <h3>Detailed Logbook Entries and Interface Styling</h3>
+              <p class="log-date">Entry by Nadja, Date: 10/04/2024</p>
+            </header>
+            <p>
+              Focused on detailing the logbook entries, both content-wise and stylistically. Added and styled copyright and impressum sections. Enhanced the flow page with appropriate content and styling. Added the dropdown menu in mobile view functionality for mobile responsiveness.
+            </p>
+            <p class="hours-worked">
+              Total Hours: 5
+            </p>
+          </article>
+          
+          <article class="log-entry">
+            <header>
+              <h3>Final Styling and Mockup & Sketch Pages</h3>
+              <p class="log-date">Entry by Nadja, Date: 11/04/2024</p>
+            </header>
+            <p>
+              Created and completed the mockups and sketch and their pages. Applied finishing touches across the website to prepare for project presentation.
+            </p>
+            <p class="hours-worked">
+              Total Hours: 4
+            </p>
+          </article>
+
+          Template
+          <article class="log-entry">
+            <header>
+              <h3>[Task Title for Today]</h3>
+              <p class="log-date">Entry by Nadja, Date: [Today's Date]</p>
+            </header>
+            <p>
+              [Description of work done today]
+            </p>
+            <p class="hours-worked">
+              Total Hours: [Hours worked today]
+            </p>
+          </article>
+          
+        
       </section>
       <aside>
         <div>
@@ -108,7 +195,14 @@
               <p><strong>Total time of project</strong>: XX hours</p>
             </li>
             <li>
-              <p><strong>Other data: ...</strong></p>
+              <p><strong>Total lines of code</strong>: XX lines</p>
+            </li>
+            <li>
+              <p><strong>Total time of HTML</strong>: XX hours</p>
+            </li><li>
+              <p><strong>Total time of JavaScript</strong>: XX hours</p>
+            </li><li>
+              <p><strong>Total time of CSS</strong>: XX hours</p>
             </li>
             <li>
               <p><strong>...</strong></p>
@@ -116,10 +210,18 @@
           </ul>
         </div>
       </aside>
-      <!-- Here is the starting point for the page content -->
     </main>
 
     <footer>
+      <p class="copyright">
+        &copy; 2024 Nadja Lötscher. All rights reserved.
+      </p>
+      <section id="impressum">
+        <h3>Impressum</h3>
+        <p>Nadja Lötscher</p>
+        <p>HES-SO, Rue de la Plaine 2, 3960 Sierre</p>
+        <p>Email: nadja.lotscher@hes-so.ch</p>
+      </section>
       <img id="logo" src="../ressources/images/logo.png" />
     </footer>
   </body>
