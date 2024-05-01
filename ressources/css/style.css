@@ -86,6 +86,8 @@ nav ul li a {
   justify-content: center; /* Align the contents horizontally */
 }
 
+
+
 /*----- Hover and Active state -----*/
 
 /* Hover state for nav links */
@@ -353,4 +355,68 @@ footer .copyright {
   height: 27.4px;
   width: 100px;
   margin: 20px; /* Ensures some space between text and logo */
+}
+
+#mockup-tab ul {
+  display: flex;
+  justify-content: start; /* Ou space-between, space-around selon l'espacement désiré */
+  list-style-type: none; /* Enlève les puces des éléments de liste */
+  padding-left: 0; /* Enlève le padding par défaut des listes */
+}
+
+#mockup-tab ul li {
+  margin-right: 10px; /* Ajoute de l'espace entre les éléments si nécessaire */
+}
+
+#mockup-tab ul li a {
+  display: block;
+  padding: 10px 20px; /* Ajustez ceci selon l'espacement souhaité */
+  background-color: #818181; /* Couleur de fond des onglets principaux */
+  color: white; /* Couleur du texte des onglets principaux */
+  text-decoration: none; /* Enlève le soulignement des liens */
+}
+
+#mockup-tab ul li:last-child a {
+  border-right: none; /* Pas de bordure pour le dernier sous-onglet */
+}
+
+#mockup-tab ul {
+  display: flex;
+  justify-content: start;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0; /* Éliminez tout espace entre les éléments de la liste */
+}
+
+#mockup-tab ul li {
+  margin-right: 0px; /* Ajustez ou supprimez la marge pour coller les éléments */
+}
+
+#mockup-tab ul li a:hover {
+  background-color: #e0e0e0; /* Ou une autre couleur pour l'état de survol */
+  color: #333;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 20px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* No border */
+  outline: none; /* Remove outline */
+  background-color: #555; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+body{
+  padding-bottom: 50px;
+}
+
+#myBtn:hover {
+  background-color: #ddd; /* Add a dark-grey background on hover */
+  color: black; /* Change text color to black */
 }
